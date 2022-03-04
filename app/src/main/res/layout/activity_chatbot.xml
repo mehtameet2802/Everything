@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".Chatbot">-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rvMsg"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@+id/rv2"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:layout_marginEnd="0dp"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        tools:itemCount="20"-->
+<!--        tools:listitem="@layout/messages" />-->
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/rv2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="53dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:padding="2dp"-->
+<!--        android:layout_marginBottom="0dp"-->
+<!--        android:background="@color/purple_200">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/msg"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="0dp"-->
+<!--            android:layout_marginEnd="2dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:layout_toStartOf="@+id/send"-->
+<!--            android:background="@drawable/round"-->
+<!--            android:padding="2dp"-->
+<!--            android:textColorHint="@color/black"-->
+<!--            android:hint="Enter message here" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/send"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginEnd="2dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:text="Send"/>-->
+
+<!--    </RelativeLayout>-->
+
+<!--</RelativeLayout>-->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chatbot">
+
+
+    <LinearLayout
+        android:id="@+id/ll_layout_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#E4E4E4"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight=".5"
+            android:background="@drawable/round_button"
+            android:backgroundTint="@android:color/white"
+            android:hint="Type a message..."
+            android:inputType="textShortMessage"
+            android:padding="10dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_button"
+            android:backgroundTint="#26A69A"
+            android:text="Send"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMsg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_layout_bar"
+        android:layout_below="@+id/dark_divider"
+        tools:itemCount="10"
+        tools:listitem="@layout/messages" />
+
+    <View
+        android:id="@+id/dark_divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#42A5F5" />
+
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:iconTint="@color/white"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/sort"
+        android:title="Sort">
+        <menu>
+            <item
+                android:id="@+id/asc"
+                android:title="Ascending" />
+            <item
+                android:id="@+id/dsc"
+                android:title="Descending" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/filter"
+        android:title="Filter">
+        <menu>
+            <item android:id="@+id/f_id"
+                android:title="Id less than"/>
+            <item
+                android:id="@+id/f_email"
+                android:title="Email contains"/>
+        </menu>
+    </item>
+
+</menu>

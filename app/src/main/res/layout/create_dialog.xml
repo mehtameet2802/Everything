@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/gender1"
+        android:layout_width="63dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="36dp"
+        android:text="Gender"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/email1"
+        app:layout_constraintTop_toBottomOf="@+id/email1" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Cancel"
+        app:layout_constraintStart_toEndOf="@+id/create"
+        app:layout_constraintTop_toBottomOf="@+id/status1" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="Create"
+        app:layout_constraintStart_toStartOf="@+id/status1"
+        app:layout_constraintTop_toBottomOf="@+id/status1" />
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="65dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/email1"
+        android:layout_width="63dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/name1"
+        app:layout_constraintTop_toBottomOf="@+id/name1" />
+
+    <TextView
+        android:id="@+id/status1"
+        android:layout_width="67dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="40dp"
+        android:text="Status"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/gender1"
+        app:layout_constraintTop_toBottomOf="@+id/gender1" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Name"
+        android:textColorHint="#B5AFAF"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/name1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Gender"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#B5AFAF"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/gender1"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Status"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#B5AFAF"
+        app:layout_constraintEnd_toEndOf="@+id/gender"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/status1"
+        app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Email"
+        android:textColorHint="#B5AFAF"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/email1"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

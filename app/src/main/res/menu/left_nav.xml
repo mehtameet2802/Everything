@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/list1"
+            android:title="List1" />
+        <item
+            android:id="@+id/list2"
+            android:title="List2"/>
+        <item
+            android:id="@+id/users"
+            android:title="Users"/>
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"/>
+        <item
+            android:id="@+id/pay"
+            android:title="Pay"/>
+        <item
+            android:id="@+id/chat"
+            android:title="Chatbot"/>
+    </group>
+</menu>

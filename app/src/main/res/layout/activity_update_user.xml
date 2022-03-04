@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateUser">
+
+    <TextView
+        android:id="@+id/upt_status"
+        android:layout_width="67dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="40dp"
+        android:text="Status"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/upt_gender"
+        app:layout_constraintTop_toBottomOf="@+id/upt_gender" />
+
+    <TextView
+        android:id="@+id/upt_email"
+        android:layout_width="63dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="40dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/upt_name"
+        app:layout_constraintTop_toBottomOf="@+id/upt_name" />
+
+    <TextView
+        android:id="@+id/upt_gender"
+        android:layout_width="63dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="40dp"
+        android:text="Gender"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/upt_email"
+        app:layout_constraintTop_toBottomOf="@+id/upt_email" />
+
+    <EditText
+        android:id="@+id/up_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#B5AFAF"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/upt_name"
+        app:layout_constraintTop_toBottomOf="@+id/detail" />
+
+    <TextView
+        android:id="@+id/upt_name"
+        android:layout_width="65dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail" />
+
+    <EditText
+        android:id="@+id/up_email"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:textColorHint="#B5AFAF"
+        android:textColor="@color/black"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/up_name"
+        app:layout_constraintTop_toBottomOf="@+id/up_name" />
+
+    <EditText
+        android:id="@+id/up_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:textColorHint="#B5AFAF"
+        android:textColor="@color/black"
+        android:hint="Gender"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/up_email"
+        app:layout_constraintTop_toBottomOf="@+id/up_email" />
+
+    <EditText
+        android:id="@+id/up_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Status"
+        android:textColorHint="#B5AFAF"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/up_gender"
+        app:layout_constraintTop_toBottomOf="@+id/up_gender" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Save"
+        app:layout_constraintEnd_toStartOf="@+id/delete"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/upt_status"
+        app:layout_constraintTop_toBottomOf="@+id/up_status" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Update"
+        app:layout_constraintEnd_toStartOf="@+id/delete"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/upt_status"
+        app:layout_constraintTop_toBottomOf="@+id/up_status" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="32dp"
+        android:text="Delete"
+        app:layout_constraintStart_toStartOf="@+id/upt_status"
+        app:layout_constraintTop_toBottomOf="@+id/up_status" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Details"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

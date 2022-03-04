@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/College/Unicode/p1/app/src/main/res/drawable/back1.xml" value="0.226" />
+        <entry key="..\:/College/Unicode/p1/app/src/main/res/drawable/recieve_box.xml" value="0.128" />
+        <entry key="..\:/College/Unicode/p1/app/src/main/res/drawable/round.xml" value="0.234" />
+        <entry key="..\:/College/Unicode/p1/app/src/main/res/drawable/round_button.xml" value="0.1" />
+        <entry key="..\:/College/Unicode/p1/app/src/main/res/drawable/send_box.xml" value="0.1" />
+        <entry key="..\:/College/Unicode/p1/app/src/main/res/layout/activity_chatbot.xml" value="0.20350877192982456" />
+        <entry key="..\:/College/Unicode/p1/app/src/main/res/layout/activity_login.xml" value="0.2234375" />
+        <entry key="..\:/College/Unicode/p1/app/src/main/res/layout/activity_sign_up.xml" value="0.2234375" />
+        <entry key="..\:/College/Unicode/p1/app/src/main/res/layout/card_layout.xml" value="0.22291666666666668" />
+        <entry key="..\:/College/Unicode/p1/app/src/main/res/layout/messages.xml" value="0.4" />
+        <entry key="..\:/College/Unicode/p1/app/src/main/res/menu/left_nav.xml" value="0.1" />
+        <entry key="..\:/Users/Meet Mehta/MyApplication/app/src/main/res/menu/menu.xml" value="0.22291666666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
