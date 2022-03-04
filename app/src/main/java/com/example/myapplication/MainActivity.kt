@@ -105,6 +105,10 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                     finish()
                 }
+                R.id.detection -> {
+                    val intent = Intent(this,ObjectDetection::class.java)
+                    startActivity(intent)
+                }
             }
             true
         }

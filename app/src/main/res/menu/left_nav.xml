@@ -19,5 +19,8 @@
         <item
             android:id="@+id/chat"
             android:title="Chatbot"/>
+        <item
+            android:id="@+id/detection"
+            android:title="Object Detection"/>
     </group>
 </menu>
